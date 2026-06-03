@@ -1,0 +1,82 @@
+:root {
+    --andani-purple: #6f42c1;
+}
+
+/* Remove all default list styling to fix "Doubles" and Bullets */
+ul, li {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.purple-text {
+    color: var(--andani-purple) !important;
+}
+
+/* Hamburger Lines */
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--andani-purple);
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* Fix the Search Bar */
+.border-purple {
+    border: 1px solid var(--andani-purple) !important;
+}
+
+.btn-purple {
+    background-color: var(--andani-purple) !important;
+    color: white !important;
+    border: none;
+}
+
+/* Ensure the dropdown hides properly */
+.dropdown-menu {
+    display: none;
+}
+
+/* Bootstrap uses the .show class to pop the menu out */
+.dropdown-menu.show {
+    display: block !important;
+}
+body {
+  /* This sets a base size, usually 16px by default */
+  font-size: 1rem; 
+}
+
+h1 {
+  font-size: 2.5rem; /* Scales relative to body */
+}
+/* --- Default styles (Mobile First approach) --- */
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+/* --- Tablets (Screens wider than 768px) --- */
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body {
+    font-size: 1.1rem;
+  }
+}
+
+/* --- Desktops (Screens wider than 1024px) --- */
+@media (min-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+  body {
+    font-size: 1.25rem;
+  }
+}
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
